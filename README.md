@@ -40,3 +40,10 @@ ako prve je potrebne vykopirovat na OTC kluce, aby sme sa tam realne potom vedel
 dalej zakladne info o clustri je vo fajle **` provider.tf `** \
 no a v neposlednom rade zadefinovat security groupy a ich role(y) \
 nova sec grope je **` security-groups.tf `** a definicia roles je v **` sg-ssh.tf `**, je to nieco ako firewall rules.
+
+vojdem do priecinka **`00-tenant-base`** a spustim seriu prikazov aby som spominane services "nainstaloval" a vedel ich pouzit do dalsieho buildu.
+```
+terraform init \
+terraform plan -out=tfplan \
+terraform apply "tfplan"
+```
