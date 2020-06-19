@@ -47,3 +47,11 @@ terraform init
 terraform plan -out=tfplan
 terraform apply "tfplan"
 ```
+overim si co mi vybuildovalo cez ``` terraform state list ``` \
+```
+pmalatin@bastion3.novalocal:/home/pmalatin/TAC/00-tenant-base $ terraform state list
+openstack_compute_keypair_v2.pmalatin-keypair
+openstack_networking_secgroup_rule_v2.allow_ssh_pmalatin
+openstack_networking_secgroup_rule_v2.outbound_ssh_pmalatin
+openstack_networking_secgroup_v2.sg-ssh-pmalatin
+```
