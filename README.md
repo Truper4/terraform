@@ -30,11 +30,11 @@ Ak budujeme prostredie, kde bude viac resourcov je dobre mat to co je spolocne p
 
 ```
 |-00-tenant-base
- | |-keypair.tf
- | |-provider.tf
- | |-security-groups.tf
- | |-sg-ssh.tf
- ```
+| |-keypair.tf
+| |-provider.tf
+| |-security-groups.tf
+| |-sg-ssh.tf
+```
 
 ako prve je potrebne vykopirovat na OTC kluce, aby sme sa tam realne potom vedeli aj dostat, na to sluzi file **` keypair.tf `** \
 dalej zakladne info o clustri je vo fajle **` provider.tf `** \
