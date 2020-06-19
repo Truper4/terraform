@@ -55,3 +55,5 @@ openstack_networking_secgroup_rule_v2.allow_ssh_pmalatin
 openstack_networking_secgroup_rule_v2.outbound_ssh_pmalatin
 openstack_networking_secgroup_v2.sg-ssh-pmalatin
 ```
+
+Teraz sa mozeme pustit do buildu single instance **`01-single-instance`**
