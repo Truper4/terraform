@@ -43,7 +43,7 @@ nova sec grope je **` security-groups.tf `** a definicia roles je v **` sg-ssh.t
 
 vojdem do priecinka **`00-tenant-base`** a spustim seriu prikazov aby som spominane services "nainstaloval" a vedel ich pouzit do dalsieho buildu.
 ```
-terraform init \
-terraform plan -out=tfplan \
+terraform init
+terraform plan -out=tfplan
 terraform apply "tfplan"
 ```
