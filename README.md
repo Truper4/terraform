@@ -26,5 +26,5 @@ zakladne prikazy pre terraform \
 ``` terraform destroy -auto-approve ``` \
 ``` terraform state list ``` # zobrazi co mam "nainstalovane" terraformom
 
-ako prve je potrebne vykopirovat na OTC kluce, aby sme sa tam realne potom vedeli aj dostat
+ako prve je potrebne vykopirovat na OTC kluce, aby sme sa tam realne potom vedeli aj dostat \
 na to sluzi file **` keypair.tf `**
