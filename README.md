@@ -100,3 +100,13 @@ Adapt your keyboard map with sudo loadkeys de/us/... to match yours
 [linux@pmalatin-vm ~]$
 ```
 vidim ze ma pripojilo, je to pecka supa mega bomba a som **STASTNY**
+
+dam este destroy v **`00-tenant-base`** a **`01-single-instance`**, aby som nezral resources
+```
+pmalatin@bastion3.novalocal:/home/pmalatin/TAC/01-single-instance $ terraform destroy -auto-approve
+pmalatin@bastion3.novalocal:/home/pmalatin/TAC/01-single-instance $ terraform state list
+pmalatin@bastion3.novalocal:/home/pmalatin/TAC/01-single-instance $ cd ../00-tenant-base/
+pmalatin@bastion3.novalocal:/home/pmalatin/TAC/00-tenant-base $ terraform destroy -auto-approve
+pmalatin@bastion3.novalocal:/home/pmalatin/TAC/00-tenant-base $ terraform state list
+```
+ako vidim ```terraform state list``` uz neukazuje nic, vsetko sme zmazali a nikto nebude pindat.
